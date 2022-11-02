@@ -1,0 +1,20 @@
+package ru.students.test_rest_service.model;
+
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class Request {
+
+    private  String uid;
+    private String operationUld;
+    private String systemName;
+    private String systemTime;
+    private String source;
+    private Integer communicationId;
+    private Integer tempLateId;
+    private Integer productCode;
+    private Integer smsCode;
+
+}
