@@ -1,20 +1,37 @@
 package ru.students.test_rest_service.model;
 
+
 import lombok.Builder;
 import lombok.Data;
+
+import javax.volidation.contraints.NotBlank;
+import javax.volidation.contraints.Size;
 
 @Data
 @Builder
 public class Request {
 
-    private  String uid;
-    private String operationUld;
+   @NotBlank
+    @Size (max=32)
+    private String uid;
+
+    @NotBlank
+    @Size (max=32)
+    private String operation;
+
     private String systemName;
+
     private String systemTime;
+
     private String source;
+
     private Integer communicationId;
+
     private Integer tempLateId;
+
     private Integer productCode;
+
     private Integer smsCode;
+
 
 }
