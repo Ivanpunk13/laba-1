@@ -5,13 +5,13 @@ import lombok.Data;
 
 @Data
 @Builder
-public class Response {
+public class Responce {
 
-    private String uid;
-    private String operationUid;
-    private String systenTime;
-    private String code;
-    private String errorCode;
-    private String errorMassage;
+    private string uid;
+    private string operationUid;
+    private string systemTime;
+    private string code;
+    private string errorCode;
+    private string message;
 
 }
